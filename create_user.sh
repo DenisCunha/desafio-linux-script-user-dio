@@ -21,7 +21,7 @@ echo "Grupos criados com sucesso!"
 echo "Iniciando a criação dos usuários..."
 
 useradd carlos -c "Carlos Santos" -s /bin/bash -m -p $(openssl passwd -crypt Mudar123) -G GRP_ADM
-passwd calos -e
+passwd carlos -e
 
 useradd maria -c "Maria Silva" -s /bin/bash -m -p $(openssl passwd -crypt Mudar123) -G GRP_ADM
 passwd maria -e
@@ -44,7 +44,7 @@ passwd josefina -e
 useradd amanda -c "Amanda Costa" -s /bin/bash -m -p $(openssl passwd -crypt Mudar123) -G GRP_SEC
 passwd amanda -e
 
-useradd rogerio -c "Rogério Perez" -s /bin/bash -m -p $(openssl passwd -crypt Mudar123) -G GRP_SEC
+useradd rogerio -c "Rogerio Perez" -s /bin/bash -m -p $(openssl passwd -crypt Mudar123) -G GRP_SEC
 passwd rogerio -e 
 
 echo "Usuários criados com sucesso!"
